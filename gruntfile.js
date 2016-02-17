@@ -25,6 +25,23 @@ module.exports = function (grunt) {
         NODE_ENV: 'production'
       }
     },
+    clean: {
+      dist: {
+        files: [{
+          dot: true,
+          src: [
+            'client/dist/{,*/}*',
+            '!client/dist/.git*'
+          ]
+        }]
+      }
+    },
+    useminPrepare: {
+      html: ['client/index.html'],
+      options: {
+        dest: 'client/dist'
+      }
+    },
     watch: {
       serverViews: {
         files: defaultAssets.server.views,
@@ -46,14 +63,14 @@ module.exports = function (grunt) {
         }
       },
       clientJS: {
-        files: defaultAssets.client.js,
-        tasks: ['jshint'],
+        files: 'client/module/**/*.js',
+        tasks: ['jshint', 'injector'],
         options: {
           livereload: true
         }
       },
       clientCSS: {
-        files: defaultAssets.client.css,
+        files: 'client/module/**/*.css',
         tasks: ['csslint'],
         options: {
           livereload: true
@@ -69,6 +86,19 @@ module.exports = function (grunt) {
       clientLESS: {
         files: defaultAssets.client.less,
         tasks: ['less', 'csslint'],
+        options: {
+          livereload: true
+        }
+      },
+      bowerLibrary: {
+        files: 'client/lib/**/*',
+        tasks: ['wiredep'],
+        options: {
+          livereload: true
+        }
+      },
+      index:{
+        files: 'client/index.html',
         options: {
           livereload: true
         }
@@ -116,8 +146,73 @@ module.exports = function (grunt) {
     },
     ngAnnotate: {
       production: {
+        files:
+          [{
+            expand: true,
+            cwd: 'client/.tmp/concat',
+            src: 'client/*/**.js',
+            dest: 'cleint/.tmp/concat'
+          }]
+      }
+    },
+    injector: {
+      options: {
+
+      },
+      // Inject application script files into index.html (doesn't include bower)
+      scripts: {
+        options: {
+          addRootSlash: false,
+          starttag: '<!-- injector:js -->',
+          endtag: '<!-- endinjector -->',
+          sort: function(a, b) {
+            return a.split('/').length - b.split('/').length;
+          },
+          ignorePath:'client'
+          //transform: function(file) {
+          //  console.log(file)
+          //}
+        },
         files: {
-          'public/dist/application.js': defaultAssets.client.js
+          'client/index.html': [
+            [
+              'client/config.js',
+              'client/init.js',
+              'client/module/**/*.js']
+          ]
+        }
+      },
+
+      // Inject component css into index.html
+      css: {
+        options: {
+          addRootSlash: false,
+          starttag: '<!-- injector:css -->',
+          endtag: '<!-- endinjector -->',
+          sort: function(a, b) {
+            return (a.indexOf('reset')>0)? -1: 1;
+          },
+          ignorePath:'client'
+        },
+        files: {
+          'client/index.html': [
+            'client/module/**/*.css'
+          ]
+        }
+      }
+    },
+    wiredep: {
+      target: {
+        src: [
+          'client/index.html'
+        ],
+        // Optional
+        options: {
+          cwd: '',
+          directory: 'client/lib',
+          dependencies: true,
+          devDependencies: false,
+          overrides: {}
         }
       }
     },
@@ -127,14 +222,14 @@ module.exports = function (grunt) {
           mangle: false
         },
         files: {
-          'public/dist/application.min.js': 'public/dist/application.js'
+          'client/dist/application.min.js': 'client/dist/application.js'
         }
       }
     },
     cssmin: {
       combine: {
         files: {
-          'public/dist/application.min.css': defaultAssets.client.css
+          'client/dist/application.min.css': defaultAssets.client.css
         }
       }
     },
@@ -296,11 +391,36 @@ module.exports = function (grunt) {
     });
   });
 
+
+  // Lint project files and minify them into two production files.
+  grunt.registerTask('build', [
+    'env:dev',
+    'clean:dist',
+    //'lint',
+    'useminPrepare',
+    'concat',
+    'ngAnnotate',
+    //'uglify',
+    //'cssmin']);
+  ]);
+
+  // Run the project in development mode
+  grunt.registerTask('default', [
+    'env:dev',
+    'lint',
+    'mkdir:upload',
+    'copy:localConfig',
+    'concurrent:default',
+    'wiredep',
+    'injector',
+    'watch'
+  ]);
+  
+  
   // Lint CSS and JavaScript files.
   grunt.registerTask('lint', ['sass', 'less', 'jshint', 'eslint', 'csslint']);
 
-  // Lint project files and minify them into two production files.
-  grunt.registerTask('build', ['env:dev', 'lint', 'ngAnnotate', 'uglify', 'cssmin']);
+
 
   // Run the project tests
   grunt.registerTask('test', ['env:test', 'lint', 'mkdir:upload', 'copy:localConfig', 'server', 'mochaTest', 'karma:unit', 'protractor']);
@@ -310,8 +430,7 @@ module.exports = function (grunt) {
   // Run project coverage
   grunt.registerTask('coverage', ['env:test', 'lint', 'mocha_istanbul:coverage', 'karma:unit']);
 
-  // Run the project in development mode
-  grunt.registerTask('default', ['env:dev', 'lint', 'mkdir:upload', 'copy:localConfig', 'concurrent:default']);
+
 
   // Run the project in debug mode
   grunt.registerTask('debug', ['env:dev', 'lint', 'mkdir:upload', 'copy:localConfig', 'concurrent:debug']);
