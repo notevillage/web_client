@@ -310,6 +310,42 @@ module.exports = function (grunt) {
         }
       }
     },
+    rev: {
+      dist: {
+        files: {
+          src: [
+            'client/dist/app/*.js',
+            'client/dist/app/*.css',
+            'client/dist/fonts/*',
+            'client/dist/img/*'
+          ]
+        }
+      }
+    },
+    usemin: {
+      html: ['client/dist/index.html', 'client/dist/module/**/*/*.html'],
+      css: ['client/dist/app/{,*/}*.css'],
+      options: {
+        assetsDirs: ['client/dist/**/']
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true,
+          conservativeCollapse: true,
+          collapseBooleanAttributes: true,
+          removeCommentsFromCDATA: true,
+          removeOptionalTags: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'client/dist',
+          src: ['*.html', 'module/**/*.html'],
+          dest: 'client/dist'
+        }]
+      }
+    },
     copy: {
       localConfig: {
         src: 'config/env/local.example.js',
@@ -317,6 +353,22 @@ module.exports = function (grunt) {
         filter: function () {
           return !fs.existsSync('config/env/local-development.js');
         }
+      },
+      html: {
+        options: {
+          process: function(content) {
+            return content.replace(/module.{0,}img/g, 'img');
+          }
+        },files: [{
+          expand: true,
+          dot: true,
+          cwd: './client',
+          dest: './client/dist',
+          src: [
+            'module/**/*.html',
+            'index.html'
+          ]
+        }]
       }
     }
   });
@@ -396,12 +448,15 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'env:dev',
     'clean:dist',
-    //'lint',
     'useminPrepare',
     'concat',
     'ngAnnotate',
-    //'uglify',
-    //'cssmin']);
+    'copy:html',
+    'uglify',
+    'cssmin',
+    'rev',
+    'usemin',
+    'htmlmin'
   ]);
 
   // Run the project in development mode

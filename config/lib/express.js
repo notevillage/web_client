@@ -94,13 +94,12 @@ module.exports.initMiddleware = function (app) {
  * Configure view engine
  */
 module.exports.initViewEngine = function (app) {
-  app.use(express.static(__dirname + '/../../client'));
-  //// Set swig as the template engine
-  //app.engine('server.view.html', consolidate[config.templateEngine]);
-  //console.log(__dirname);
-  //// Set views path and view engine
-  //app.set('view engine', 'server.view.html');
-  //app.set('views', './');
+  var isProduction = process.env.NODE_ENV === 'production';
+  if (isProduction) {
+    app.use(express.static(__dirname + '/../../client/dist'));
+  } else {
+    app.use(express.static(__dirname + '/../../client'));
+  }
 };
 
 /**
@@ -157,12 +156,12 @@ module.exports.initHelmetHeaders = function (app) {
  */
 module.exports.initModulesClientRoutes = function (app) {
   // Setting the app router and static folder
-  app.use('/', express.static(path.resolve('./public')));
-
+  app.use('/', express.static(path.resolve('./client')));
+  console.log('client '+ config.folders.client);
   // Globbing static routing
-  config.folders.client.forEach(function (staticPath) {
-    app.use(staticPath, express.static(path.resolve('./' + staticPath)));
-  });
+  //config.folders.client.forEach(function (staticPath) {
+  //  app.use(staticPath, express.static(path.resolve('./' + staticPath)));
+  //});
 };
 
 /**
@@ -179,6 +178,7 @@ module.exports.initModulesServerPolicies = function (app) {
  * Configure the modules server routes
  */
 module.exports.initModulesServerRoutes = function (app) {
+  console.log('server' + config.files.server.routes);
   // Globbing routing files
   config.files.server.routes.forEach(function (routePath) {
     require(path.resolve(routePath))(app);
@@ -194,7 +194,7 @@ module.exports.initErrorRoutes = function (app) {
     if (!err) {
       return next();
     }
-
+    console.log(err, req, res, next,'hello?');
     // Log it
     console.error(err.stack);
 
