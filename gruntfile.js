@@ -39,7 +39,8 @@ module.exports = function (grunt) {
     useminPrepare: {
       html: ['client/index.html'],
       options: {
-        dest: 'client/dist'
+        dest: 'client/dist',
+        src: 'client'
       }
     },
     watch: {
@@ -149,9 +150,9 @@ module.exports = function (grunt) {
         files:
           [{
             expand: true,
-            cwd: 'client/.tmp/concat',
-            src: 'client/*/**.js',
-            dest: 'cleint/.tmp/concat'
+            cwd: '.tmp/concat',
+            src: '*/**.js',
+            dest: '.tmp/concat'
           }]
       }
     },
@@ -450,7 +451,7 @@ module.exports = function (grunt) {
     'clean:dist',
     'useminPrepare',
     'concat',
-    'ngAnnotate',
+    'ngAnnotate:production',
     'copy:html',
     'uglify',
     'cssmin',

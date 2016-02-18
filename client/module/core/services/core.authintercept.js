@@ -1,7 +1,16 @@
-angular.module('core').factory('authInterceptor', ['$q', '$injector', 'Authentication',
-  function ($q, $injector, Authentication) {
+(function () {
+
+  'use strict';
+
+  angular
+    .module('core')
+    .factory('authInterceptor', authInterceptor);
+
+
+  /*@ngInject*/
+  function authInterceptor($q, $injector, Authentication) {
     return {
-      responseError: function(rejection) {
+      responseError: function (rejection) {
         if (!rejection.config.ignoreAuthModule) {
           switch (rejection.status) {
             case 401:
@@ -19,4 +28,7 @@ angular.module('core').factory('authInterceptor', ['$q', '$injector', 'Authentic
       }
     };
   }
-]);
+})();
+
+
+
