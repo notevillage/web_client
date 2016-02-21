@@ -8,6 +8,5 @@
 
   /* @ngInject */
   function landingController($scope) {
-    console.log('??');
   }
 })();

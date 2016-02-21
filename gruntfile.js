@@ -72,21 +72,21 @@ module.exports = function (grunt) {
       },
       clientCSS: {
         files: 'client/module/**/*.css',
-        tasks: ['csslint'],
+        tasks: ['csslint', 'injector'],
         options: {
           livereload: true
         }
       },
       clientSCSS: {
         files: defaultAssets.client.sass,
-        tasks: ['sass', 'csslint'],
+        tasks: ['sass', 'csslint', 'injector'],
         options: {
           livereload: true
         }
       },
       clientLESS: {
         files: defaultAssets.client.less,
-        tasks: ['less', 'csslint'],
+        tasks: ['less', 'csslint', 'injector'],
         options: {
           livereload: true
         }
