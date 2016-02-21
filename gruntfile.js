@@ -370,6 +370,20 @@ module.exports = function (grunt) {
             'index.html'
           ]
         }]
+      },
+      dist: {
+        files: [{
+          expand: true,
+          flatten: true,
+          dest: './client/dist/fonts',
+          src: ['./client/lib/fontawesome/fonts/*'],
+          filter: 'isFile'
+        },{
+          expand: true,
+          flatten: true,
+          dest: './client/dist/img',
+          src: ['./client/module/**/*.{png,jpg,jpeg,gif,webp,svg}']
+        }]
       }
     }
   });
@@ -453,6 +467,7 @@ module.exports = function (grunt) {
     'concat',
     'ngAnnotate:production',
     'copy:html',
+    'copy:dist',
     'uglify',
     'cssmin',
     'rev',
