@@ -1,0 +1,139 @@
+.landing .navigation{
+    width: 100%;
+    background-color: #fff;
+    height: 80px;
+}
+
+.landing .navigation .logo-area{
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    vertical-align: top;
+}
+.landing .navigation .logo-area .logo-img{
+    width: 136px;
+    height: 23px;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+.landing .navigation .navigation-area{
+    height: 80px;
+    padding-left: 193px;
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+}
+.landing .navigation .navigation-button-box{
+    display: inline-block;
+    padding-top: 30px;
+    height: 50px;
+    width: 80px;
+}
+.landing .navigation .navigation-button-box button{
+    opacity: 0.87;
+    background: transparent;
+    font-weight: bold;
+    border: 0;
+    font-size: 13pt;
+}
+.landing .navigation .navigation-button-box button.signup{
+    color: #ef5350;
+}
+.landing .navigation .signin-area{
+    float: right;
+    height: 50px;
+    vertical-align: top;
+    display: inline-block;
+    width: 100px;
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: right;
+}
+.landing .navigation .signin-area button{
+    font-size: 13pt;
+    color: #ef5350;
+    background: transparent;
+    font-weight: bold;
+    border: 0;
+}
+.landing .main{
+    height: 350px;
+    background-color: #F4f5f5;
+}
+
+.landing .main .center-container{
+    padding-top: 95px;
+    margin: 0 auto;
+    width: 300px;
+    font-size: 0;
+    height: 300px;
+}
+.landing .main .center-container h2{
+    color: #000;
+    opacity: 0.87;
+    margin-bottom: 18px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.landing .main .center-container h3{
+    color: #ef5350;
+    opacity: 0.87;
+    font-size: 18pt;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.landing .main .center-container .main-button-area{
+    width: 70px;
+    display: inline-block;
+    height: 47px;
+}
+.landing .main .center-container .main-button{
+    width: 47px;
+    height: 47px;
+    border: 0px;
+}
+
+.landing .main .center-container .main-button.camera{
+    background: url("../img/camera-gray.png");
+    background-size: 47px 47px;
+}
+.landing .main .center-container .main-button.camera:hover{
+    background: url("../img/camera-red.png");
+    background-size: 47px 47px;
+}
+
+.landing .main .center-container .main-button.gallery{
+    background: url("../img/gallery-gray.png");
+    background-size: 47px 47px;
+}
+.landing .main .center-container .main-button.gallery:hover{
+    background: url("../img/gallery-red.png");
+    background-size: 47px 47px;
+}
+.landing .main .center-container .main-button.folder{
+    background: url("../img/folder-gray.png");
+    background-size: 47px 47px;
+}
+.landing .main .center-container .main-button.folder:hover{
+    background: url("../img/folder-red.png");
+    background-size: 47px 47px;
+}
+
+
+.landing .search{
+    font-size: 0;
+    width: 100%;
+}
+.landing .search .search-area{
+    width: 50%;
+    display: inline-block;
+    height: 325px;
+}
+.landing .search .search-area.class{
+    background-color: #feeeee;
+}
+.landing .search .search-area.school{
+    background-color: #e0e0df;
+}
