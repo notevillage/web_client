@@ -98,6 +98,7 @@ module.exports.initViewEngine = function (app) {
   if (isProduction) {
     app.use(express.static(__dirname + '/../../client/dist'));
   } else {
+    app.use('/main', express.static(__dirname + '/../../client'));
     app.use(express.static(__dirname + '/../../client'));
   }
 };

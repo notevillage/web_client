@@ -1,8 +1,8 @@
 <div class="landing">
   <div class="navigation">
     <div class="logo-area">
-      <img class="logo-img" src="../module/landing/img/logo.png">
-    </div>
+     <img  ui-sref="home.main" class="logo-img" src="../module/landing/img/logo.png">
+      </div>
     <div class="navigation-area">
       <div class="navigation-button-box">
         <button>올리기</button>
@@ -17,36 +17,15 @@
         <button>나의노빌</button>
       </div>
       <div class="navigation-button-box">
-        <button class="signup">Sign Up</button>
+        <button class="signup" ui-sref="home.signup">Sign Up</button>
       </div>
     </div>
     <div class="signin-area">
       <button>Log In</button>
     </div>
   </div>
-  <div class="main">
-    <div class="center-container">
-      <h2>노트 올리기</h2>
-      <h3>당신의 노트를 올려보세요</h3>
-      <div class="main-button-area">
-        <button class="main-button camera">
-        </button>
-      </div>
-      <div class="main-button-area">
-        <button class="main-button gallery">
-        </button>
-      </div>
-      <div class="main-button-area">
-        <button class="main-button folder">
-        </button>
-      </div>
-
-    </div>
+  <div data-ui-view="mainView">
+      
   </div>
-  <div class="search">
-    <div class="search-area class">
-    </div>
-    <div class="search-area school">
-    </div>
-  </div>
+  
 </div>
