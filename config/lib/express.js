@@ -95,11 +95,18 @@ module.exports.initMiddleware = function (app) {
  */
 module.exports.initViewEngine = function (app) {
   var isProduction = process.env.NODE_ENV === 'production';
+  app.engine('html', require('ejs').renderFile);
+  app.set('view engine', 'html');
   if (isProduction) {
     app.use(express.static(__dirname + '/../../client/dist'));
+      app.use(function(req, res) {
+      return res.render(__dirname + '/../../client/dist/index.html');
+    });
   } else {
-    app.use('/main', express.static(__dirname + '/../../client'));
     app.use(express.static(__dirname + '/../../client'));
+    app.use(function(req, res) {
+      return res.render(__dirname + '/../../client/index.html');
+    });
   }
 };
 

@@ -58,7 +58,7 @@ module.exports = function (grunt) {
         }
       },
       clientViews: {
-        files: defaultAssets.client.views,
+        files: 'client/module/**/*.html',
         options: {
           livereload: true
         }
