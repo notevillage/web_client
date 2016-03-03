@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <title>NoteVillage</title>
   <base href="/index.html">
+  
+
   <!-- build:css(./client) app/vendor.css -->
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
   <!-- bower:css -->
   <link rel="stylesheet" href="lib/reset-css/reset.css" />
   <!-- endbower -->
@@ -12,6 +15,7 @@
 
   <!-- build:css(./client) app/app.css -->
   <!-- injector:css -->
+  <link rel="stylesheet" href="module/landing/css/upload.css">
   <link rel="stylesheet" href="module/landing/css/landing.css">
   <link rel="stylesheet" href="module/core/css/hack.css">
   <!-- endinjector -->
@@ -45,14 +49,15 @@
   <!-- injector:js -->
   <script src="config.js"></script>
   <script src="init.js"></script>
-  <script src="module/core/core.module.js"></script>
   <script src="module/landing/landing.module.js"></script>
+  <script src="module/core/core.module.js"></script>
   <script src="module/user/user.module.js"></script>
-  <script src="module/core/config/core.routes.js"></script>
   <script src="module/core/services/core.authintercept.js"></script>
-  <script src="module/landing/config/landing.routes.js"></script>
   <script src="module/landing/controller/landing.controller.js"></script>
+  <script src="module/landing/controller/landing.upload.controller.js"></script>
+  <script src="module/core/config/core.routes.js"></script>
   <script src="module/user/services/user.authentication.js"></script>
+  <script src="module/landing/config/landing.routes.js"></script>
   <!-- endinjector -->
   <script src="//localhost:35729/livereload.js"></script>
   <!-- endbuild -->

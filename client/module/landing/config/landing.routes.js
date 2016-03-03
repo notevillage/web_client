@@ -11,10 +11,12 @@
     $stateProvider
         .state('home', {
           url: '/',
+        abstract: true,
           views: {
             contentView: {
               controller: 'landingController',
-              templateUrl: 'module/landing/views/landing.html'
+              templateUrl: 'module/landing/views/landing.html',
+              
             }
           }
         })
@@ -24,6 +26,15 @@
             mainView: {
               controller: 'landingController',
               templateUrl: 'module/landing/views/landing.main.html'
+            }
+          }
+        })
+    .state('home.upload', {
+          url: 'upload',
+          views: {
+            mainView: {
+              controller: 'landingUploadController',
+              templateUrl: 'module/landing/views/upload.html'
             }
           }
         })

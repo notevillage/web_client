@@ -2,12 +2,14 @@
     width: 100%;
     background-color: #fff;
     height: 80px;
+    text-align: center;
 }
 
 .landing .navigation .logo-area{
     display: inline-block;
     width: 200px;
     height: 80px;
+    float: left;
     vertical-align: top;
 }
 .landing .navigation .logo-area .logo-img{
@@ -18,8 +20,7 @@
 }
 .landing .navigation .navigation-area{
     height: 80px;
-    padding-left: 193px;
-    width: 500px;
+    margin: 0 auto;
     display: inline-block;
     vertical-align: top;
 }
@@ -34,6 +35,7 @@
     background: transparent;
     font-weight: bold;
     border: 0;
+    cursor: pointer;
     font-size: 13pt;
 }
 .landing .navigation .navigation-button-box button.signup{
@@ -55,7 +57,9 @@
     background: transparent;
     font-weight: bold;
     border: 0;
+    cursor: pointer;
 }
+
 .landing .main{
     height: 350px;
     background-color: #F4f5f5;
@@ -130,10 +134,41 @@
     width: 50%;
     display: inline-block;
     height: 325px;
+    vertical-align: top;
+}
+.landing .search .search-area .search-img{
+    margin-top:32px;
+    font-size: 37px;
+    color:#BDBCBC;
+    margin-bottom:32px;
+}
+.landing .search .search-area h4{
+    font-size:15pt;
+    opacity: 0.54;
+    color: black;
+    line-height: 36pt;
+}
+.landing .search .search-area .class-register-button{
+    background-color: white;
+    font-size:18pt;
+    margin-top:50px;
+    border: #EF5350 2px solid;
+    height:83px;
+    width:457px;
+    border-radius: 42px;
+    color:#EF5350;
+    font-weight: bold;
 }
 .landing .search .search-area.class{
     background-color: #feeeee;
+    text-align:center;
 }
 .landing .search .search-area.school{
     background-color: #e0e0df;
+}
+.landing .register-area{
+    background-color: #EF5350;
+    height:325px;
+    display: inline-block;
+    width: 100%;
 }

@@ -5,7 +5,7 @@
       </div>
     <div class="navigation-area">
       <div class="navigation-button-box">
-        <button>올리기</button>
+        <button ui-sref="home.upload">올리기</button>
       </div>
       <div class="navigation-button-box">
         <button>구매하기</button>
@@ -21,7 +21,8 @@
       </div>
     </div>
     <div class="signin-area">
-      <button>Log In</button>
+         <button ng-show="isSignIn" ng-click="signOut()">Log Out</button>
+      <button ng-show="!isSignIn"  ng-click="signIn()">Log In</button>
     </div>
   </div>
   <div data-ui-view="mainView">
