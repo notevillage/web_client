@@ -376,7 +376,7 @@ module.exports = function (grunt) {
           expand: true,
           flatten: true,
           dest: './client/dist/fonts',
-          src: ['./client/lib/fontawesome/fonts/*'],
+          src: ['./client/lib/font-awesome/fonts/*'],
           filter: 'isFile'
         },{
           expand: true,
