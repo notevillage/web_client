@@ -17,6 +17,7 @@
     height: 23px;
     margin-top: 32px;
     margin-left: 32px;
+    cursor: pointer;
 }
 .landing .navigation .navigation-area{
     height: 80px;
@@ -125,6 +126,70 @@
     background-size: 47px 47px;
 }
 
+.landing .after-login-area{
+    width:100%;
+    color:red;
+    text-align:center;
+    background-color:#EF5350;
+    vertical-align: center;
+    line-height: 50px;
+}
+.landing .after-login-area .cash-status{
+    width:32%;
+    display:inline-block;
+    height:50px;
+    cursor: pointer;
+   
+}
+.landing .after-login-area .cash-status .fixed{
+    font-size:16pt;
+    opacity: 0.87;
+    color:white;
+    width:60%;
+    display: inline-block;
+}
+.landing .after-login-area .cash-status .changeable{
+    font-size:18pt;
+    opacity: 1;
+    color:white;
+    width:30%;
+display: inline-block;
+}
+.landing .after-login-area .divider-left{
+    width:1px;
+    height:30px;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+}
+
+.landing .after-login-area .cash-charge{
+    width:32%;
+    font-size:16pt;
+    opacity: 0.87;
+    color:white;
+    display: inline-block;
+    height:50px;
+    cursor: pointer;
+   
+}
+.landing .after-login-area .divider-right{
+    width:1px;
+    height:35px;
+    background-color: rgba(255,255,255,0.3);
+    display: inline-block;
+}
+.landing .after-login-area .bought-notes{
+    width:32%;
+    font-size: 16pt;
+    opacity: 0.87;
+    color:white;
+    display: inline-block;
+    height:50px;
+    cursor: pointer;
+ 
+}
+
 
 .landing .search{
     font-size: 0;
@@ -133,11 +198,11 @@
 .landing .search .search-area{
     width: 50%;
     display: inline-block;
-    height: 325px;
+    height: 465px;
     vertical-align: top;
 }
 .landing .search .search-area .search-img{
-    margin-top:32px;
+    margin-top:70px;
     font-size: 37px;
     color:#BDBCBC;
     margin-bottom:32px;
@@ -146,7 +211,7 @@
     font-size:15pt;
     opacity: 0.54;
     color: black;
-    line-height: 36pt;
+    line-height: 40pt;
 }
 .landing .search .search-area .class-register-button{
     background-color: white;
@@ -160,12 +225,37 @@
     font-weight: bold;
 }
 .landing .search .search-area.class{
-    background-color: #feeeee;
+    background-color: #eeeeee;
     text-align:center;
 }
 .landing .search .search-area.school{
     background-color: #e0e0df;
 }
+.landing .search .search-area.school .search-form{
+    margin-top: 70px;
+    margin-left:100px;
+    margin-bottom: 32px;
+}
+.landing .search .search-area.school .search-form input[type="text"]{
+    font-size: 14pt;
+    opacity: 0.38;
+    width:521px;
+    height: 40px;
+    background-color: white;
+}
+
+.landing .search .search-area.school .search-form .btn{
+    font-size:14pt;
+    background-color: inherit;
+    height:40px;
+}
+.landing .search .search-area.school h4{
+    font-size : 14pt;
+    opacity: 0.38;
+    line-height: 40pt;
+}
+
+
 .landing .register-area{
     background-color: #EF5350;
     height:325px;
