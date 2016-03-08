@@ -1,11 +1,14 @@
 (function() {
 
   'use strict';
+    
+    
 
   angular
     .module('landing')
     .controller('landingUploadController', landingUploadController);
-
+    
+    
   /* @ngInject */
   function landingUploadController($scope) {
     $scope.classQueue= [
@@ -23,6 +26,7 @@
         })
     }
       
+      
       function deleteClass(index) {
           if ($scope.classQueue.length !== 1) {
                $scope.classQueue.splice(index,1); 
@@ -30,4 +34,5 @@
         
     }
   }
+    
 })();

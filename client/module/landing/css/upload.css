@@ -1,5 +1,125 @@
 .upload{
-    background-color:#FFFFFF; 
-    width:100%;
+    background-color: #EEEEEE;
+}
+.upload .upload-container{
     
+    background-color:#EEEEEE;
+    width:100%;
+}
+.upload .upload-container .upload-file{
+    width:331px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left:15%;
+   
+}
+.upload .upload-container .upload-file input{
+    height:415px;
+    width:inherit;
+    background-color: #E0E0DF;
+}
+.upload .upload-container .upload-file .note-add{
+    margin-top:35px;
+    font-size:14pt;
+    opacity: 0.87;
+    font-weight: bold;
+    border:1px solid rgba(0,0,0,0.98);
+    width:331px;
+    background-color:white;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.upload .upload-container .upload-info{
+    background:white;
+    width:632px;
+    height:450px;
+    margin-top:50px;
+    margin-left:100px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.upload .upload-container .upload-info .text{
+    margin-top: 36px;
+    margin-left:50px;
+    margin-right:61px;
+}
+.upload .upload-container .upload-info .text .class-info-text{
+    font-size:18pt;
+    opacity: 0.87;
+    font-weight: bold;
+    display:inline-block;
+    width:57%;
+    text-align:right;
+}
+.upload .upload-container .upload-info .text .myclass-text{
+    font-size:15pt;
+    color:#EF5350;
+    display: inline-block;
+    text-align:right;
+    width:42%;
+}
+.upload .upload-container .upload-info .line1{
+    margin-left: 50px;
+    margin-right: 61px;
+    margin-top:50px;
+    width:510px;
+    height:1px;
+    background-color: black;
+}
+.upload .upload-container .upload-info .line2{
+    margin-left: 50px;
+    margin-right: 61px;
+    margin-top:5px;
+    margin-bottom: 35px;
+    width:510px;
+    height:2px;
+    background-color: black;
+}
+.upload .upload-container .upload-info .date{
+    margin-left:61px;
+    font-size: 14pt;
+    width:26%;
+    text-align: center;
+    border-right: 1px solid black;
+    opacity: 0.87;
+    display: inline-block;
+}
+.upload .upload-container .upload-info .price{
+    font-size: 14pt;
+    width:26%;
+    text-align: center;
+    border-right: 1px solid black;
+    opacity: 0.87;
+    display: inline-block;
+}
+.upload .upload-container .upload-info .type{
+    font-size: 14pt;
+    width:26%;
+    text-align: center;
+    opacity: 0.87;
+    display: inline-block;
+    margin-right: 61px;
+}
+
+
+
+.upload .divider{
+    background-color: inherit;
+    width:60%;
+    height:40px;
+    display: inline-block;
+}
+.upload .submit{
+    margin-right:67px;
+    background-color: red;
+    font-size:15pt;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    height:40px;
+    width: 331px;
+    display: inline-block;
+    border:1px solid red;
 }

@@ -1,18 +1,42 @@
 <div class="upload">
     <div class="upload-container" ng-repeat="class in classQueue">
-       
-        <button>
-            추가업로드
-        </button>
-        <button ng-click="deleteClass($index)">
-            X
-        </button>
-        <button ng-if="$index + 1 !== classQueue.length">
-            노트 No. {{$index + 1}}
-        </button>
-        <button ng-click="addClass()"
-            ng-if="$index + 1 === classQueue.length">
-            추가 업로드
-        </button>
+        <div class=upload-file>
+            <input type="file" id="file" />
+            <button ng-click="deleteClass($index)" ng-show="">
+                X
+            </button>
+            <button class="note-number" ng-if="$index + 1 !== classQueue.length">
+                노트 No. {{$index + 1}}
+            </button>
+            <button class="note-add" ng-click="addClass()" ng-if="$index + 1 === classQueue.length">
+                연속 업로드
+            </button>
+
+        </div>
+
+        <div class="upload-info">
+            <div class="text">
+                <div class="class-info-text">수업 이름</div>
+                <div class="myclass-text">나의수업에서 찾기</div>
+            </div>
+
+
+            <div class="line1"></div>
+            <div class="line2"></div>
+
+
+            <div class="date">
+                <i class="fa fa-calendar-o"></i>
+                   수업날짜
+            </div>
+            <div class="price">노트가격</div>
+            <div class="type">노트종류</div>
+
+
+        </div>
+
+
     </div>
+    <div class="divider"></div>
+    <button class="submit">노트 올리기</button>
 </div>
