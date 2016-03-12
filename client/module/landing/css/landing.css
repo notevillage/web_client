@@ -71,6 +71,7 @@
 .landing .main {
     height: 350px;
     background-color: #F4f5f5;
+    background: url("../img/landing_main.jpg")
 }
 
 .landing .main .center-container {
