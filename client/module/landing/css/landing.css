@@ -71,13 +71,15 @@
 .landing .main {
     height: 350px;
     background-color: #F4f5f5;
-    background: url("../img/landing_main.jpg")
+    background: url("../img/landing_main.jpg");
+    background-size: 100% 100%;
+
 }
 
 .landing .main .center-container {
     padding-top: 95px;
     margin: 0 auto;
-    width: 300px;
+    width:300px;
     font-size: 0;
     height: 300px;
 }
