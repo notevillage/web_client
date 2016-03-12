@@ -2,7 +2,6 @@
     background-color: #EEEEEE;
 }
 .upload .upload-container{
-    
     background-color:#EEEEEE;
     width:100%;
 }
@@ -11,15 +10,26 @@
     display: inline-block;
     margin-top: 50px;
     margin-left:15%;
-   
 }
 .upload .upload-container .upload-file input{
     height:415px;
     width:inherit;
     background-color: #E0E0DF;
 }
+.upload .upload-container .upload-file .cancel{
+    margin-top:30px;
+    width:331px;
+    height: 30px;
+    background-color: red;
+    color:white;
+    font-size: 14pt;
+    font-weight:bold;
+    border:1px solid red;
+    cursor: pointer;
+}
+
 .upload .upload-container .upload-file .note-add{
-    margin-top:35px;
+    margin-top:5px;
     font-size:14pt;
     opacity: 0.87;
     font-weight: bold;
@@ -28,6 +38,15 @@
     background-color:white;
     height: 40px;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+.upload .upload-container .upload-file .note-number{
+    width:331px;
+    margin-top:5px;
+    background-color:white;
+    border:1px solid black;
+    font-size:10pt;
+    height:25px;
 }
 
 .upload .upload-container .upload-info{
@@ -58,7 +77,7 @@
     color:#EF5350;
     display: inline-block;
     text-align:right;
-    width:42%;
+    width:40%;
 }
 .upload .upload-container .upload-info .line1{
     margin-left: 50px;
@@ -122,4 +141,5 @@
     width: 331px;
     display: inline-block;
     border:1px solid red;
+    cursor: pointer;
 }

@@ -1,0 +1,104 @@
+.myclass-container{
+    width:100%;
+    background-color: #EEEEEE;
+    min-height:1000px;
+    display: inline-block;
+}
+
+.myclass-container .class-info{
+    margin-left: 20%;
+    margin-top:100px;
+    text-align: center;
+    width:300px;
+    height:500px;
+    float: left;
+    
+}
+.myclass-container .class-info .semester{
+    width:230px;
+    height: 40px;
+    background-color: white;
+    font-size:17pt;
+    color:#EF5350;
+    border:1px solid #EF5350;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.myclass-container .class-info .divider{
+    margin-bottom:20px;
+    width:300px;
+    height:1px;
+    background-color:black;
+    opacity: 0.38;
+}
+
+.myclass-container .class-info .class-list ul li{
+    font-size:12pt;
+    background-color: inherit;
+    border:none;
+    border-bottom:1px solid rgba(0,0,0,0.38);
+    color:black;
+    width:210px;
+    display:inline-block;
+    cursor: pointer;
+}
+.myclass-container .class-info .class-list ul li:hover{
+    background-color:white;
+    color:#EF5350;
+    cursor: pointer;
+    font-weight: bold;
+}
+.myclass-container .class-info .finish{
+    margin-top:50px;
+    background-color: #EF5350;
+    color:white;
+    font-size: 13pt;
+    height:40px;
+    width:210px;
+    border-radius: 5px;
+    border:none;
+}
+
+.myclass-container .time-table{
+    background-color: white;
+    width:550px;
+    margin-top:50px;
+    margin-left: 15%;
+    text-align: center;
+    height:600px;
+    border-radius: 20px;
+  display: inline-block;
+}
+.myclass-container .time-table .contents{
+    margin-left: 25px;
+    margin-top:20px;
+}
+.myclass-container .time-table tr th{
+    width:78px;
+    text-align:center;
+    font-size:12pt;
+    font-weight: bold;
+    height:36px;
+    border-right:1px solid black;
+      vertical-align: center;
+}
+.myclass-container .time-table tr td{
+    width:78px;
+    text-align: center;
+    font-size:7pt;
+    border:1px solid black;
+}
+.myclass-container .time-table tr{
+    height:18px;
+}
+.myclass-container .time-table .contents tr .first{
+    border:none;
+    border-bottom: 1px solid black;
+}
+.myclass-container .time-table .contents tr .first.very{
+    border-top:1px solid black;
+}
+.myclass-container .time-table .contents tr .last{
+    border:none;
+    border-bottom: 1px solid black;
+}

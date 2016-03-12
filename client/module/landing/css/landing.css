@@ -1,37 +1,41 @@
-.landing .navigation{
+.landing .navigation {
     width: 100%;
     background-color: #fff;
     height: 80px;
     text-align: center;
 }
 
-.landing .navigation .logo-area{
+.landing .navigation .logo-area {
     display: inline-block;
     width: 200px;
     height: 80px;
     float: left;
     vertical-align: top;
 }
-.landing .navigation .logo-area .logo-img{
+
+.landing .navigation .logo-area .logo-img {
     width: 136px;
     height: 23px;
     margin-top: 32px;
     margin-left: 32px;
     cursor: pointer;
 }
-.landing .navigation .navigation-area{
+
+.landing .navigation .navigation-area {
     height: 80px;
     margin: 0 auto;
     display: inline-block;
     vertical-align: top;
 }
-.landing .navigation .navigation-button-box{
+
+.landing .navigation .navigation-button-box {
     display: inline-block;
     padding-top: 30px;
     height: 50px;
     width: 85px;
 }
-.landing .navigation .navigation-button-box button{
+
+.landing .navigation .navigation-button-box button {
     opacity: 0.87;
     background: transparent;
     font-weight: bold;
@@ -39,10 +43,12 @@
     cursor: pointer;
     font-size: 13pt;
 }
-.landing .navigation .navigation-button-box button.signup{
+
+.landing .navigation .navigation-button-box button.signup {
     color: #ef5350;
 }
-.landing .navigation .signin-area{
+
+.landing .navigation .signin-area {
     float: right;
     height: 50px;
     vertical-align: top;
@@ -52,7 +58,8 @@
     padding-right: 30px;
     text-align: right;
 }
-.landing .navigation .signin-area button{
+
+.landing .navigation .signin-area button {
     font-size: 13pt;
     color: #ef5350;
     background: transparent;
@@ -61,19 +68,20 @@
     cursor: pointer;
 }
 
-.landing .main{
+.landing .main {
     height: 350px;
     background-color: #F4f5f5;
 }
 
-.landing .main .center-container{
+.landing .main .center-container {
     padding-top: 95px;
     margin: 0 auto;
     width: 300px;
     font-size: 0;
     height: 300px;
 }
-.landing .main .center-container h2{
+
+.landing .main .center-container h2 {
     color: #000;
     opacity: 0.87;
     margin-bottom: 18px;
@@ -81,7 +89,7 @@
     font-weight: bold;
 }
 
-.landing .main .center-container h3{
+.landing .main .center-container h3 {
     color: #ef5350;
     opacity: 0.87;
     font-size: 18pt;
@@ -89,182 +97,190 @@
     font-weight: bold;
 }
 
-.landing .main .center-container .main-button-area{
+.landing .main .center-container .main-button-area {
     width: 70px;
     display: inline-block;
     height: 47px;
 }
-.landing .main .center-container .main-button{
+
+.landing .main .center-container .main-button {
     width: 47px;
     height: 47px;
     border: 0px;
 }
 
-.landing .main .center-container .main-button.camera{
+.landing .main .center-container .main-button.camera {
     background: url("../img/camera-gray.png");
     background-size: 47px 47px;
 }
-.landing .main .center-container .main-button.camera:hover{
+
+.landing .main .center-container .main-button.camera:hover {
     background: url("../img/camera-red.png");
     background-size: 47px 47px;
 }
 
-.landing .main .center-container .main-button.gallery{
+.landing .main .center-container .main-button.gallery {
     background: url("../img/gallery-gray.png");
     background-size: 47px 47px;
 }
-.landing .main .center-container .main-button.gallery:hover{
+
+.landing .main .center-container .main-button.gallery:hover {
     background: url("../img/gallery-red.png");
     background-size: 47px 47px;
 }
-.landing .main .center-container .main-button.folder{
+
+.landing .main .center-container .main-button.folder {
     background: url("../img/folder-gray.png");
     background-size: 47px 47px;
 }
-.landing .main .center-container .main-button.folder:hover{
+
+.landing .main .center-container .main-button.folder:hover {
     background: url("../img/folder-red.png");
     background-size: 47px 47px;
 }
 
-.landing .after-login-area{
-    width:100%;
-    color:red;
-    text-align:center;
-    background-color:#EF5350;
+.landing .after-login-area {
+    width: 100%;
+    color: red;
+    text-align: center;
+    background-color: #EF5350;
     vertical-align: center;
     line-height: 50px;
 }
-.landing .after-login-area .cash-status{
-    width:32%;
-    display:inline-block;
-    height:50px;
+
+.landing .after-login-area .cash-status {
+    width: 32%;
+    display: inline-block;
+    height: 50px;
     cursor: pointer;
-   
-}
-.landing .after-login-area .cash-status .fixed{
-    font-size:16pt;
-    opacity: 0.87;
-    color:white;
-    width:60%;
-    display: inline-block;
-}
-.landing .after-login-area .cash-status .changeable{
-    font-size:18pt;
-    opacity: 1;
-    color:white;
-    width:30%;
-display: inline-block;
-}
-.landing .after-login-area .divider-left{
-    width:1px;
-    height:30px;
-    display: inline-block;
-    background-color: rgba(255,255,255,0.3);
-    padding-bottom: 5px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.landing .after-login-area .cash-charge{
-    width:32%;
-    font-size:16pt;
-    opacity: 0.87;
-    color:white;
-    display: inline-block;
-    height:50px;
-    cursor: pointer;
-   
-}
-.landing .after-login-area .divider-right{
-    width:1px;
-    height:35px;
-    background-color: rgba(255,255,255,0.3);
-    display: inline-block;
-}
-.landing .after-login-area .bought-notes{
-    width:32%;
+.landing .after-login-area .cash-status .fixed {
     font-size: 16pt;
     opacity: 0.87;
-    color:white;
+    color: white;
+    width: 60%;
     display: inline-block;
-    height:50px;
-    cursor: pointer;
- 
 }
 
+.landing .after-login-area .cash-status .changeable {
+    font-size: 18pt;
+    opacity: 1;
+    color: white;
+    width: 30%;
+    display: inline-block;
+}
 
-.landing .search{
+.landing .after-login-area .cash-charge {
+    width: 32%;
+    font-size: 16pt;
+    opacity: 0.87;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    cursor: pointer;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.landing .after-login-area .bought-notes {
+    width: 32%;
+    font-size: 16pt;
+    opacity: 0.87;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    cursor: pointer;
+}
+
+.landing .search {
     font-size: 0;
     width: 100%;
 }
-.landing .search .search-area{
+
+.landing .search .search-area {
     width: 50%;
     display: inline-block;
     height: 465px;
     vertical-align: top;
 }
-.landing .search .search-area .search-img{
-    margin-top:70px;
+
+.landing .search .search-area .search-img {
+    margin-top: 70px;
     font-size: 37px;
-    color:#BDBCBC;
-    margin-bottom:32px;
+    color: #BDBCBC;
+    margin-bottom: 32px;
 }
-.landing .search .search-area h4{
-    font-size:15pt;
+
+.landing .search .search-area h4 {
+    font-size: 15pt;
     opacity: 0.54;
     color: black;
     line-height: 40pt;
 }
-.landing .search .search-area .class-register-button{
+
+.landing .search .search-area .class-register-button {
     background-color: white;
-    font-size:18pt;
-    margin-top:50px;
+    font-size: 18pt;
+    margin-top: 50px;
     border: #EF5350 2px solid;
-    height:83px;
-    width:457px;
+    height: 83px;
+    width: 457px;
     border-radius: 42px;
-    color:#EF5350;
+    color: #EF5350;
     font-weight: bold;
 }
-.landing .search .search-area.class{
+
+.landing .search .search-area.class {
     background-color: #eeeeee;
-    text-align:center;
+    text-align: center;
 }
-.landing .search .search-area.school{
+
+.landing .search .search-area.school {
     background-color: #e0e0df;
 }
-.landing .search .search-area.school .search-form{
+
+.landing .search .search-area.school .search-form {
     margin-top: 70px;
-    margin-left:100px;
+    margin-left: 100px;
     margin-bottom: 50px;
 }
-.landing .search .search-area.school .search-form input[type="text"]{
+
+.landing .search .search-area.school .search-form input[type="text"] {
     font-size: 14pt;
     opacity: 0.38;
-    width:521px;
+    width: 521px;
     height: 40px;
     background-color: white;
 }
-
-.landing .search .search-area.school .search-form .btn{
-    font-size:14pt;
-    background-color: inherit;
-    height:40px;
+.landing .search .search-area.school .search-form .input-group-addon{
+    font-size: 10pt;
 }
-.landing .search .search-area.school h4{
-    font-size : 15pt;
+
+.landing .search .search-area.school .search-form .btn {
+    font-size: 14pt;
+    background-color: inherit;
+    height: 40px;
+}
+
+.landing .search .search-area.school h4 {
+    font-size: 15pt;
     opacity: 0.38;
     line-height: 40pt;
-    margin-top:20pt;
+    margin-top: 20pt;
 }
-.landing .search .search-area.school .texts{
+
+.landing .search .search-area.school .texts {
     font-size: 13pt;
     opacity: 0.38;
-    margin-top:20pt;
+    margin-top: 20pt;
 }
 
-
-.landing .register-area{
+.landing .register-area {
     background-color: #EF5350;
-    height:325px;
+    height: 325px;
     display: inline-block;
     width: 100%;
 }
+
+.landing

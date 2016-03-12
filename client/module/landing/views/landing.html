@@ -11,18 +11,18 @@
         <button>구매하기</button>
       </div>
       <div class="navigation-button-box">
-        <button>나의수업</button>
+        <button ui-sref="home.myclass">나의수업</button>
       </div>
       <div class="navigation-button-box">
         <button>나의노빌</button>
       </div>
       <div class="navigation-button-box">
-        <button class="signup" ui-sref="home.signup">Sign Up</button>
+        <button class="signup" ui-sref="home.signup">SIGN UP</button>
       </div>
     </div>
     <div class="signin-area">
-         <button ng-show="isSignIn" ng-click="signOut()">Log Out</button>
-      <button ng-show="!isSignIn"  ng-click="signIn()">Log In</button>
+         <button ng-show="isSignIn" ng-click="signOut()">LOG OUT</button>
+      <button ng-show="!isSignIn"  ng-click="signIn()">LOG IN</button>
     </div>
   </div>
   <div data-ui-view="mainView">
