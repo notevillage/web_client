@@ -1,51 +1,51 @@
 .landing .navigation {
     width: 100%;
     background-color: #fff;
-    height: 80px;
+    height: 78px;
     text-align: center;
 }
 
 .landing .navigation .logo-area {
     display: inline-block;
-    width: 200px;
-    height: 80px;
+    width:200px;
+    height:78px;
     float: left;
-    vertical-align: top;
 }
 
 .landing .navigation .logo-area .logo-img {
-    width: 136px;
-    height: 23px;
-    margin-top: 32px;
+    width: 130px;
+    height: 22px;
+    margin-top: 30px;
     margin-left: 32px;
     cursor: pointer;
 }
 
 .landing .navigation .navigation-area {
-    height: 80px;
+    height: 78px;
     margin: 0 auto;
     display: inline-block;
     vertical-align: top;
+    text-align: left;
 }
 
 .landing .navigation .navigation-button-box {
     display: inline-block;
-    padding-top: 30px;
-    height: 50px;
-    width: 85px;
+    padding-top: 35px;
+    height: 20px;
+    width: 84px;
 }
 
 .landing .navigation .navigation-button-box button {
     opacity: 0.87;
     background: transparent;
-    font-weight: bold;
     border: 0;
     cursor: pointer;
-    font-size: 13pt;
+    font-size: 12px;
 }
 
 .landing .navigation .navigation-button-box button.signup {
     color: #ef5350;
+    width:85px;
 }
 
 .landing .navigation .signin-area {
@@ -53,50 +53,48 @@
     height: 50px;
     vertical-align: top;
     display: inline-block;
-    width: 100px;
-    padding-top: 30px;
-    padding-right: 30px;
+    width: 120px;
+    padding-top: 35px;
+    padding-right: 35px;
     text-align: right;
 }
 
 .landing .navigation .signin-area button {
-    font-size: 13pt;
+    font-size: 12px;
     color: #ef5350;
     background: transparent;
-    font-weight: bold;
     border: 0;
     cursor: pointer;
 }
 
 .landing .main {
-    height: 570px;
+    height:300px;
     background-color: #F4f5f5;
-    background: url("../img/landing_main.jpg");
+    background: url("../img/landing_main.png");
     background-size: 100% 100%;
 }
 
 .landing .main .center-container {
-    padding-top: 95px;
+
     margin: 0 auto;
-    width:300px;
+    width:350px;
     font-size: 0;
-    height: 300px;
+    background-color: transparent;
+    margin-left: 41.7%;
+        padding-top: 100px;
 }
 
 .landing .main .center-container h2 {
-    color: #000;
-    opacity: 0.87;
-    margin-bottom: 18px;
-    font-size: 18pt;
-    font-weight: bold;
+    margin:0 auto;
+    color: #EF5350;
+    margin-bottom: 15px;
+    font-size: 27px;
 }
 
 .landing .main .center-container h3 {
-    color: #ef5350;
-    opacity: 0.87;
-    font-size: 18pt;
-    margin-bottom: 18px;
-    font-weight: bold;
+    margin:0 auto;
+    color: #ffffff;
+    font-size: 21px;
 }
 
 .landing .main .center-container .main-button-area {
@@ -146,143 +144,263 @@
     color: red;
     text-align: center;
     background-color: #EF5350;
-    vertical-align: center;
-    line-height: 50px;
+    height: 45px;
+    margin:0 auto;
 }
 
 .landing .after-login-area .cash-status {
+    height: 45px;
     width: 32%;
     display: inline-block;
-    height: 50px;
     cursor: pointer;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
+
 }
 
 .landing .after-login-area .cash-status .fixed {
-    font-size: 16pt;
+    font-size: 15px;
     opacity: 0.87;
     color: white;
     width: 60%;
     display: inline-block;
+    padding-top: 10px;
 }
 
 .landing .after-login-area .cash-status .changeable {
-    font-size: 18pt;
-    opacity: 1;
+    font-size: 15px;
+    opacity: 0.87;
+    font-weight: bold;
     color: white;
     width: 30%;
     display: inline-block;
+    padding-top: 10px;
 }
 
 .landing .after-login-area .cash-charge {
+    margin: 0 auto;
     width: 32%;
-    font-size: 16pt;
+    font-size: 15px;
     opacity: 0.87;
     color: white;
     display: inline-block;
-    height: 50px;
     cursor: pointer;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    height: 45px;
 }
 
 .landing .after-login-area .bought-notes {
+    height: 45px;
     width: 32%;
-    font-size: 16pt;
+    font-size: 15px;
     opacity: 0.87;
     color: white;
     display: inline-block;
-    height: 50px;
     cursor: pointer;
+    padding-top: 10px;
 }
 
 .landing .search {
     font-size: 0;
     width: 100%;
+    margin: 0 auto;
 }
 
 .landing .search .search-area {
     width: 50%;
     display: inline-block;
-    height: 465px;
+    height: 336px;
     vertical-align: top;
 }
-
-.landing .search .search-area .search-img {
-    margin-top: 70px;
-    font-size: 37px;
-    color: #BDBCBC;
-    margin-bottom: 32px;
+.landing .search .class{
+    background-color:#EEEEEE;
+    margin: 0 auto;
 }
-
-.landing .search .search-area h4 {
-    font-size: 15pt;
-    opacity: 0.54;
-    color: black;
-    line-height: 40pt;
+.landing .search .class button{
+    border:none;
+    margin:0 auto;
+    width:100%;
+    height:100%;
+    background: inherit;
 }
-
-.landing .search .search-area .class-register-button {
-    background-color: white;
-    font-size: 18pt;
-    margin-top: 50px;
-    border: #EF5350 2px solid;
-    height: 83px;
-    width: 457px;
-    border-radius: 42px;
+.landing .search .class h4 {
+    font-size: 18px;
+    margin:0 auto;
     color: #EF5350;
-    font-weight: bold;
+   margin-left:62px;
+    text-align: left;
+    vertical-align: top;
 }
-
-.landing .search .search-area.class {
-    background-color: #eeeeee;
-    text-align: center;
+.landing .search .class h5 {
+ font-size:12px;
+    color:#000000;
+    text-align: left;
+    margin-left: 62px;
+    margin-top: 15px;
+    opacity: 0.38;
+    margin-bottom:220px;
+}
+.landing .search .class .b{
+    background: url("../img/table_temp.png");
+    background-size:100% 100%;
 }
 
 .landing .search .search-area.school {
     background-color: #e0e0df;
+    margin: 0 auto;
 }
 
 .landing .search .search-area.school .search-form {
-    margin-top: 70px;
-    margin-left: 100px;
-    margin-bottom: 50px;
+    margin-top: 32px;
+    margin-left: 31px;
 }
 
 .landing .search .search-area.school .search-form input[type="text"] {
-    font-size: 14pt;
+    font-size: 14px;
     opacity: 0.38;
-    width: 521px;
+    width: 87%;
     height: 40px;
     background-color: white;
 }
 .landing .search .search-area.school .search-form .input-group-addon{
-    font-size: 10pt;
-}
-
-.landing .search .search-area.school .search-form .btn {
-    font-size: 14pt;
-    background-color: inherit;
-    height: 40px;
+    font-size: 16px;
 }
 
 .landing .search .search-area.school h4 {
-    font-size: 15pt;
+    font-size: 14px;
     opacity: 0.38;
-    line-height: 40pt;
-    margin-top: 20pt;
+    text-align: left;
+    color:#000000;
+    margin-left:31px;
+    margin-top:16px;
 }
 
 .landing .search .search-area.school .texts {
-    font-size: 13pt;
+    font-size: 14px;
     opacity: 0.38;
-    margin-top: 20pt;
+    margin-top: 12px;
+    margin-left: 31px;
+}
+.landing .search .search-area.school .form{
+    text-align: center;
+    background: white;
+    margin:0 auto;
+    margin-top:20px;
+    margin-left:31px;
+    width:87%;
+    height:140px;
+}
+.landing .search .school .contents{
+    margin-top:10px;
+    margin-left:10px;
+}
+.landing .search .school .contents tr th{
+    font-size:14px;
+    opacity: 0.5;
+    width:70px;
+    text-align: center;
 }
 
 .landing .register-area {
     background-color: #EF5350;
     height: 325px;
-    display: inline-block;
     width: 100%;
+    margin:0 auto;
+}
+.landing .register-area .texts{
+    color:#FFFFFF;
+    font-size:17px;
+    width:100%;
+    padding-top:39px;
+    text-align: center;
+}
+.landing .register-area .register{
+    margin-top:50px;
+}
+.landing .register-area input{
+    font-size:17px;
+    border: none;
+    background: inherit;
+}
+input[class="name"]::-webkit-input-placeholder{
+    color:white !important;
+}
+input[class="e-mail"]::-webkit-input-placeholder{
+    color:white !important;
+}
+input[class="pw"]::-webkit-input-placeholder{
+    color:white !important;
+    opacity: 0.38;
+}
+input[class="pw-confirm"]::-webkit-input-placeholder{
+    color:white !important;
+    opacity: 0.38;
+}
+.landing .register-area .name-name{
+    display: inline-block;
+    margin-left:7%;
+    width:34%;
+}
+.landing .register-area .pw-pw{
+    display: inline-block;
+    width:34%;
+    margin-left:17%;
+    margin-right:7%;
+}
+.landing .register-area .e-mail-e-mail{
+    display: inline-block;
+    margin-left:7%;
+    width:34%;
+}
+.landing .register-area .pw-confirm-pw-confirm{
+    display: inline-block;
+    width:34%;
+    margin-left:17%;
+    margin-right:7%;
+}
+.landing .register-area .name-border{
+    width:34%;
+    margin-left:7%;
+    display: inline-block;
+    margin-top:5px;
+    background-color: white;
+    height:1px;
+    margin-bottom: 56px;
+}
+.landing .register-area .pw-border{
+    width:34%;
+    margin-left:17%;
+    margin-right: 7%;
+    display: inline-block;
+    margin-top:5px;
+    background-color: white;
+    height:1px;
+    margin-bottom: 56px;
+}
+.landing .register-area .e-mail-border{
+    width:34%;
+    margin-left:7%;
+    display: inline-block;
+    
+    background-color: white;
+    height:1px;
+}
+.landing .register-area .pw-confirm-border{
+    width:34%;
+    margin-left:17%;
+    margin-right: 7%;
+    display: inline-block;
+    
+    background-color: white;
+    height:1px;
+}
+.landing .register-area button{
+    border:none;
+    font-size:17px;
+    color:white;
+    background: inherit;
+    margin-top:39px;
+    margin-left:80%;
 }
 
-.landing
+

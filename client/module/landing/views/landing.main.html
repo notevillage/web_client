@@ -3,19 +3,6 @@
         <div class="center-container">
             <h2>노트 올리기</h2>
             <h3>당신의 노트를 올려보세요 </h3>
-            <div class="main-button-area">
-                <button class="main-button camera">
-                </button>
-            </div>
-            <div class="main-button-area">
-                <button class="main-button gallery">
-                </button>
-            </div>
-            <div class="main-button-area">
-                <button class="main-button folder">
-                </button>
-            </div>
-
         </div>
     </div>
     <div class="after-login-area">
@@ -28,47 +15,76 @@
     </div>
 
     <div class="search">
-        <div class="search-area class">
-            <i class="search-img fa fa-sticky-note-o"></i>
-            <div>
-                <h4>당신의 수업 스케쥴을 통해</h4>
-                <h4>필요한 노트를 바로 찾아보세요</h4>
-            </div>
-            <button class="class-register-button">
-                나의 수업 바로 등록하기
-            </button>
+        <div class="search-area class" >
+                <button class="a"ng-show="myClass" ng-click="myClick()"><h4>나의 수업 바로 등록하기</h4>
+                <h5>당신의 수업 스케쥴을 통해 필요한 노트를 바로 찾아보세요</h5></button>
+               
+            <button class="b"ng-show="!myClass" ng-click="myUn()"></button>
         </div>
         <div class="search-area school">
             <div class="search-form">
                 <form class="inline-form">
                     <div class="form-group">
                         <lable class="sr-only" for="searchInput">
-                            어떤 노트를 찾으세요?
                         </lable>
                         <div class="input-group">
                             <div class="input-group-addon"><i class="fa fa-search"></i></div>
                             <input type="text" class="s-form form-control" placeholder="어떤 노트를 찾으세요?">
+
                         </div>
                     </div>
                 </form>
 
 
 
-
-
-
-                <h4>#학교 #학과 #수업 내용</h4>
-                <div class="texts">
-                    필요한 과목의 노트와 공부 자료들을 찾아보세요
-                </div>
-
             </div>
+            <h4>(학교, 학과, 수업 내용)</h4>
+            <div class="texts">
+                필요한 과목의 노트와 공부 자료들을 찾아보세요
+            </div>
+            <div class="form">
+                <table class="contents">
+                    <tr>
+                        <th>과목명</th>
+                        <th>업로더</th>
+                        <th>추가태그</th>
+                        <th>가격</th>
+                        <th>날짜</th>
+                        <th>파일형태</th>
+                        <th>다운 수</th>
+                    </tr>
+                    <tr>
+                        <td class="first very">8 AM</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="last very"></td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
     </div>
 
 
 
     <div class="register-area">
-
+        <div class="texts">당신의 수업과 노트를 지금 등록해보세요</div>
+        <div class="register">
+            <div class="name-name"><input class="name" type="text" placeholder="이름" name="name">
+            
+            </div>
+        
+        <div class="pw-pw"><input class="pw" type="text" placeholder="Password"></div>
+        <div class="name-border"></div>
+        <div class="pw-border"></div>
+        <div class="e-mail-e-mail"><input class="e-mail" type="text" placeholder="학교 이메일로 학교 인증"></div>
+        
+        <div class="pw-confirm-pw-confirm"><input class="pw-confirm" type="text" placeholder="Password Confirm"></div>
+        <div class="e-mail-border"></div>
+        <div class="pw-confirm-border"></div>
+        </div>
+        <button class="confirm">가입</button>
     </div>
 </div>
