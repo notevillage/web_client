@@ -1,24 +1,28 @@
 <div class="landing">
   <div class="navigation">
     <div class="logo-area">
-     <img  ui-sref="home.main" class="logo-img" src="../module/landing/img/logo.png">
+     <img  ui-sref="home.main" class="logo-img" src="../module/landing/img/logo.png" ng-click="inMain()">
       </div>
     <div class="navigation-area">
       <div class="navigation-button-box">
-        <button ui-sref="home.upload">올리기</button>
+        <button ui-sref="home.upload" ng-click="outMain()">올리기</button>
       </div>
       <div class="navigation-button-box">
-        <button>구매하기</button>
+        <button ng-click="outMain()">구매하기</button>
       </div>
       <div class="navigation-button-box">
-        <button ui-sref="home.myclass">나의수업</button>
+        <button ui-sref="home.myclass" ng-click="outMain()">나의수업</button>
       </div>
-      <div class="navigation-button-box">
-        <button>나의노빌</button>
+      <div class="navigation-button-box" >
+        <button ng-click="outMain()">나의노빌</button>
       </div>
-      <div class="navigation-button-box">
-        <button class="signup" ui-sref="home.signup">SIGN UP</button>
+      <div class="navigation-button-box" >
+        <button class="signup" ui-sref="home.signup" ng-click="outMain()">SIGN UP</button>
       </div>
+    </div>
+    <div class="main-search-area" ng-show="isOutMain">
+        <i class="fa fa-search main-icon" ui-sref="home.search"></i>
+        <input type="text" class="main-search" placeholder="어느 수업 노트를 찾으세요?">
     </div>
     <div class="signin-area">
          <button ng-show="isSignIn" ng-click="signOut()">LOG OUT</button>

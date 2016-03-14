@@ -47,6 +47,24 @@
                     }
                 }
             })
+        .state('home.buy', {
+                url: 'buy',
+                views: {
+                    mainView: {
+                        controller: 'landingController',
+                        templateUrl: 'module/landing/views/buy.html'
+                    }
+                }
+            })
+            .state('home.search', {
+                url: 'search',
+                views: {
+                    mainView: {
+                        controller: 'landingController',
+                        templateUrl: 'module/landing/views/search.html'
+                    }
+                }
+            })
             .state('home.signup', {
                 url: 'signup',
                 views: {

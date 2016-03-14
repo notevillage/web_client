@@ -47,7 +47,32 @@
     color: #ef5350;
     width:85px;
 }
-
+.landing .navigation .main-search-area{
+    width:440px;
+    
+    margin: 0 auto;
+    padding-top:35px;
+    padding-left:70px;
+    background: none;
+    height:35px;
+    margin:0 auto;
+    display:inline-block;
+}
+.landing .navigation .main-search-area i{
+    font-size:15px;
+    display: inline-block;
+    margin:0 auto;
+}
+.landing .navigation .main-search-area input{
+    width:350px;
+    display: inline-block;
+    border:none;
+    border-bottom:1px solid black;
+}
+input[class="main-search"]::-webkit-input-placeholder{
+    font-size:12px;
+    opacity:0.5;
+}
 .landing .navigation .signin-area {
     float: right;
     height: 50px;
@@ -57,7 +82,9 @@
     padding-top: 35px;
     padding-right: 35px;
     text-align: right;
+    margin: 0 auto;
 }
+
 
 .landing .navigation .signin-area button {
     font-size: 12px;
@@ -400,7 +427,7 @@ input[class="pw-confirm"]::-webkit-input-placeholder{
     color:white;
     background: inherit;
     margin-top:39px;
-    margin-left:80%;
+    margin-left:85%;
 }
 
 

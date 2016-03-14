@@ -14,6 +14,9 @@
       $scope.myClass = true;
       $scope.myClick = myClick;
       $scope.myUn = myUn;
+      $scope.isOutMain = false;
+      $scope.outMain = outMain;
+      $scope.inMain = inMain;
       
       function signIn() {
           $scope.isSignIn = true;
@@ -28,6 +31,13 @@
       }
       function myUn(){
           $scope.myClass = true;
+      }
+      
+      function outMain(){
+          $scope.isOutMain = true;
+      }
+      function inMain(){
+          $scope.isOutMain = false;
       }
   }
 })();

@@ -2,103 +2,215 @@
     width:100%;
     background-color: #EEEEEE;
     min-height:1000px;
-    display: inline-block;
+    margin: 0 auto;
 }
 
 .myclass-container .class-info{
-    margin-left: 20%;
-    margin-top:100px;
+    margin-left: 74px;
+    margin-top:116px;
     text-align: center;
-    width:300px;
+    width:254px;
     height:500px;
-    float: left;
+    display: inline-block;
     
 }
 .myclass-container .class-info .semester{
-    width:230px;
+    width:254px;
     height: 40px;
     background-color: white;
-    font-size:17pt;
+    font-size:17px;
     color:#EF5350;
     border:1px solid #EF5350;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 36px;
+}
+.myclass-container .class-info h2{
+    font-size:8px;
+    color:#231F20;
+    text-align: left;
+    opacity: 0.3;
+    margin:0 auto;
+}
+.myclass-container .class-info .input-group{
+    margin-top:10px;
+}
+input[class="search-form"]::-webkit-input-placeholder{
+    color:white !important;
+    opacity: 0.38;
 }
 .myclass-container .class-info .divider{
-    margin-bottom:20px;
-    width:300px;
+    margin-top:7px;
+    margin-bottom:16px;
+    width:254px;
     height:1px;
-    background-color:black;
-    opacity: 0.38;
+    background-color:#231F20;
+    opacity: 0.3;
 }
 
 .myclass-container .class-info .class-list ul li{
-    font-size:12pt;
+    font-size:12px;
     background-color: inherit;
     border:none;
-    border-bottom:1px solid rgba(0,0,0,0.38);
+    border-bottom:1px solid rgba(0,0,0,0.18);
     color:black;
     width:210px;
     display:inline-block;
     cursor: pointer;
+    line-height: 38px;
 }
 .myclass-container .class-info .class-list ul li:hover{
-    background-color:white;
+    background-color:#FFFFFf;
     color:#EF5350;
     cursor: pointer;
     font-weight: bold;
 }
 .myclass-container .class-info .finish{
-    margin-top:50px;
+    margin-top:68px;
     background-color: #EF5350;
     color:white;
-    font-size: 13pt;
+    font-size: 13px;
     height:40px;
-    width:210px;
+    width:220px;
     border-radius: 5px;
     border:none;
 }
 
 .myclass-container .time-table{
     background-color: white;
-    width:550px;
-    margin-top:50px;
-    margin-left: 15%;
+    margin-top:23px;
+    margin-left: 44px;
     text-align: center;
-    height:600px;
+    height:665px;
+    width:786px;
     border-radius: 20px;
   display: inline-block;
 }
 .myclass-container .time-table .contents{
-    margin-left: 25px;
-    margin-top:20px;
+    margin-left: 44px;
+    margin-top:23px;
 }
 .myclass-container .time-table tr th{
-    width:78px;
+    width:117px;
     text-align:center;
-    font-size:12pt;
+    font-size:21px;
     font-weight: bold;
     height:36px;
-    border-right:1px solid black;
+    border-right:1px solid rgba(0,0,0,0.22);
       vertical-align: center;
+    padding-top:0px;
 }
 .myclass-container .time-table tr td{
-    width:78px;
+    width:117px;
     text-align: center;
-    font-size:7pt;
-    border:1px solid black;
+    font-size:18px;
+    border:1px solid rgba(0,0,0,0.22);
+    margin: 0 auto;
+}
+.myclass-container .time-table h2{
+    font-size:9px;
+    color:black;
+    opacity:0.54;
+    margin:0 auto;
+    display: inline-block;
 }
 .myclass-container .time-table tr{
     height:18px;
 }
 .myclass-container .time-table .contents tr .first{
     border:none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,0.22);
 }
 .myclass-container .time-table .contents tr .first.very{
-    border-top:1px solid black;
+    border-top:1px solid rgba(0,0,0,0.22);
 }
 .myclass-container .time-table .contents tr .last{
     border:none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,0.22);
+}
+
+.myclass-container .time-table .contents .green.o{
+    font-size:12px;
+    color:black;
+    font-weight: bold;
+}
+.myclass-container .time-table .contents .green.t{
+    font-size:12px;
+    color:black;
+}
+.myclass-container .time-table .contents .purple.o{
+    font-size:10px;
+    color:#3A52A4;
+    font-weight: bold;
+}
+.myclass-container .time-table .contents .purple.t{
+    font-size:12px;
+    color:#3A52A4;
+}
+.myclass-container .time-table .contents .pink.o{
+    font-size:12px;
+    color:#C04D9C;
+    font-weight: bold;
+}
+.myclass-container .time-table .contents .pink.t{
+    font-size:12px;
+    color:#C04D9C;
+}
+.myclass-container .time-table .contents .orange.o{
+    font-size:12px;
+    color:#F26721;
+    font-weight: bold;
+}
+.myclass-container .time-table .contents .orange.t{
+    font-size:12px;
+    color:#F26721;
+}
+.myclass-container .time-table .contents .s-green.o{
+    font-size:12px;
+    color:#ACD036;
+    font-weight: bold;
+}
+.myclass-container .time-table .contents .s-green.t{
+    font-size:12px;
+    color:#ACD036;
+}
+.myclass-container .time-table .contents .red.o{
+    font-size:12px;
+    color:#ED1D2E;
+    font-weight: bold;
+}
+.myclass-container .time-table .contents .red.t{
+    font-size:12px;
+    color:#ED1D2E;
+    
+}
+.myclass-container .time-table .contents .green{
+    background-color:#ACDBCA;
+    border:none;
+    margin:0 auto;
+}
+
+.myclass-container .time-table .contents .purple{
+    background-color: #CAC7E4;
+    border:none;
+    margin:0 auto;
+}
+.myclass-container .time-table .contents .pink{
+    background-color: #E5CBE2;
+    border:none;
+    margin:0 auto;
+}
+.myclass-container .time-table .contents .orange{
+    background-color: #FCD2B6;
+    border:none;
+    margin:0 auto;
+}
+.myclass-container .time-table .contents .s-green{
+    background-color: #E1EFD4;
+    border:none;
+    margin:0 auto;
+}
+.myclass-container .time-table .contents .red{
+    background-color: #F48A94;
+    border:none;
+    margin:0 auto;
 }
